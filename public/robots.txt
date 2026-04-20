@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://understanding-thai-culture-book.vercel.app/sitemap.xml

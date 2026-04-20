@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 2400" role="img" aria-label="Understanding Thai Culture book cover">
+  <defs>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.04  0 0 0 0 0.04  0 0 0 0 0.03  0 0 0 0.28 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+    <linearGradient id="jade-wash" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3d6950"/>
+      <stop offset="55%" stop-color="#2a4e3a"/>
+      <stop offset="100%" stop-color="#1c2e22"/>
+    </linearGradient>
+    <radialGradient id="saffron-glow" cx="80%" cy="15%" r="55%">
+      <stop offset="0%" stop-color="#f5c65a" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#e7a82a" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#e7a82a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="vignette" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#000" stop-opacity="0.14"/>
+      <stop offset="50%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.24"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Deep jade background with saffron glow corner -->
+  <rect width="1600" height="2400" fill="url(#jade-wash)"/>
+  <rect width="1600" height="2400" fill="url(#saffron-glow)"/>
+  <rect width="1600" height="2400" fill="url(#vignette)"/>
+  <rect width="1600" height="2400" filter="url(#grain)"/>
+
+  <!-- Thin saffron frame -->
+  <rect x="60" y="60" width="1480" height="2280" fill="none" stroke="#e7a82a" stroke-width="2" stroke-opacity="0.55"/>
+
+  <!-- Series mark top-right -->
+  <g font-family="'IBM Plex Mono', ui-monospace, monospace" fill="#f5c65a" letter-spacing="10">
+    <text x="1460" y="200" text-anchor="end" font-size="28" font-weight="600">UNDERSTANDING THAI CULTURE</text>
+    <text x="1460" y="240" text-anchor="end" font-size="22">VOL · I</text>
+  </g>
+
+  <!-- Byline -->
+  <g font-family="'IBM Plex Mono', ui-monospace, monospace" fill="#f5c65a" letter-spacing="6" fill-opacity="0.85">
+    <text x="140" y="200" font-size="24">A BOOK BY FABIAN ARNDT</text>
+  </g>
+
+  <!-- Central minimalist lotus icon -->
+  <g transform="translate(800, 950)" opacity="0.9">
+    <!-- stylized wat roof / open lotus petals -->
+    <path d="M 0 0 L -60 -70 L -40 -130 L 0 -150 L 40 -130 L 60 -70 Z" fill="none" stroke="#f5c65a" stroke-width="2.5"/>
+    <path d="M 0 0 L -160 -50 L -170 -120 L -110 -140 L -60 -70 Z" fill="none" stroke="#f5c65a" stroke-width="2.5" stroke-opacity="0.7"/>
+    <path d="M 0 0 L 160 -50 L 170 -120 L 110 -140 L 60 -70 Z" fill="none" stroke="#f5c65a" stroke-width="2.5" stroke-opacity="0.7"/>
+    <circle cx="0" cy="-75" r="4" fill="#f5c65a"/>
+  </g>
+
+  <!-- Title -->
+  <g font-family="'Fraunces', Georgia, serif" fill="#faf3e4">
+    <text x="140" y="1440" font-size="220" font-weight="500" letter-spacing="-9">Understanding</text>
+    <text x="140" y="1660" font-size="220" font-weight="500" font-style="italic" letter-spacing="-9" fill="#f5c65a">Thai Culture.</text>
+  </g>
+
+  <!-- Hairline divider -->
+  <line x1="140" y1="1780" x2="420" y2="1780" stroke="#f5c65a" stroke-width="2" stroke-opacity="0.7"/>
+
+  <!-- Subtitle -->
+  <g font-family="'Source Serif 4', Georgia, serif" fill="#faf3e4" fill-opacity="0.9">
+    <text x="140" y="1880" font-size="42" font-style="italic" font-weight="400">How Thailand works,</text>
+    <text x="140" y="1940" font-size="42" font-style="italic" font-weight="400">not what to see.</text>
+  </g>
+
+  <!-- Three Parts at bottom (typographic detail) -->
+  <g font-family="'IBM Plex Mono', ui-monospace, monospace" fill="#f5c65a" letter-spacing="4" font-size="17" fill-opacity="0.8">
+    <text x="140" y="2110">PART I · FOUNDATION</text>
+    <text x="140" y="2145">PART II · HOW THAILAND WORKS</text>
+    <text x="140" y="2180">PART III · THAILAND IN MOTION</text>
+  </g>
+
+  <!-- Bottom bar + author name -->
+  <line x1="140" y1="2260" x2="1460" y2="2260" stroke="#f5c65a" stroke-width="1.5" stroke-opacity="0.5"/>
+  <g font-family="'IBM Plex Sans', ui-sans-serif, sans-serif" fill="#faf3e4" letter-spacing="14">
+    <text x="140" y="2320" font-size="28" font-weight="600">FABIAN  ARNDT</text>
+  </g>
+  <g font-family="'IBM Plex Mono', ui-monospace, monospace" fill="#f5c65a" letter-spacing="4" fill-opacity="0.75">
+    <text x="1460" y="2320" text-anchor="end" font-size="18">VOLUME I · 2026</text>
+  </g>
+</svg>
