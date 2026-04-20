@@ -193,17 +193,17 @@ export const concepts: Concept[] = [
   },
   // Part III, outer arc (three concepts)
   {
-    id: "modernity",
-    roman: "song pii, song lok",
-    thai: "สองปี สองโลก",
-    translation: "two years, two worlds",
+    id: "phra-khrueang",
+    roman: "phra khrueang",
+    thai: "พระเครื่อง",
+    translation: "sacred equipment; consecrated amulet",
     part: "III",
     partTitle: "Thailand in Motion",
     chapter: "Tradition and Change",
     chapterNumber: 9,
-    tagline: "The old makes room for the new without vacating.",
+    tagline: "The amulet under the blouse, beside the spreadsheet.",
     teaser:
-      "A rice farmer in Udon Thani checks commodity prices on his phone while sitting in the wooden house his grandparents built. He is not living in two worlds. He is living in one world that contains both things, and he would not think to ask whether they contradict.",
+      "The same professional may wear a consecrated amulet under her blouse, a phra khrueang, while analyzing a spreadsheet. She does not experience this as cognitive dissonance. She experiences it as completeness: the amulet protects, the spreadsheet produces, and both belong to a life that would be incomplete without either.",
     x: 500,
     y: 180,
   },

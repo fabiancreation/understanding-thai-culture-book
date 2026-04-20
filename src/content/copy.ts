@@ -21,7 +21,7 @@ export const copy = {
     headlineTrail: "every silence.",
     paragraphs: [
       "This is not a travel guide. It does not rate restaurants, rank beaches, or recommend hotels. It tells the reader what they are looking at when they get there.",
-      "It is not an academic text. It draws on the work of Suntaree Komin and Holmes and Tangtongtavy, but it uses no footnotes and pretends to nothing comprehensive. It is a long-form essay about a culture, written by someone who finds it genuinely interesting rather than exotic.",
+      "It is not an academic text. It draws on Thai cultural research, on Suntaree Komin's nine-value-cluster framework and on Holmes and Tangtongtavy's cross-cultural analysis of Thai nonverbal communication. It uses no footnotes and does not pretend to be comprehensive. It is a long-form essay, written by someone who finds the culture genuinely interesting rather than exotic.",
       "It is not a manual of dos and don'ts. The etiquette chapter describes what happens when rules are violated, not what rules to follow. The distinction matters. A list of rules produces compliance. An understanding of why the rules exist produces cultural literacy.",
     ],
   },
