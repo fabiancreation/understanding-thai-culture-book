@@ -27,8 +27,9 @@ export function EditorialIntro() {
                 className="font-display text-[2rem] leading-[1.03] tracking-[-0.02em] text-ink-950 sm:text-[2.6rem] md:text-[3.2rem]"
                 style={{ fontVariationSettings: "'opsz' 144, 'SOFT' 30" }}
               >
-                A city told through the{" "}
-                <span className="italic text-jade-700">neighborhoods</span> that built it.
+                {copy.pitch.headlineLead}{" "}
+                <span className="italic text-jade-700">{copy.pitch.headlineItalic}</span>{" "}
+                {copy.pitch.headlineTrail}
               </h2>
             </motion.div>
 

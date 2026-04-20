@@ -16,6 +16,9 @@ export const copy = {
   },
   pitch: {
     eyebrow: "What this book is, and what it is not",
+    headlineLead: "The logic underneath",
+    headlineItalic: "every smile, every meeting,",
+    headlineTrail: "every silence.",
     paragraphs: [
       "This is not a travel guide. It does not rate restaurants, rank beaches, or recommend hotels. It tells the reader what they are looking at when they get there.",
       "It is not an academic text. It draws on the work of Suntaree Komin and Holmes and Tangtongtavy, but it uses no footnotes and pretends to nothing comprehensive. It is a long-form essay about a culture, written by someone who finds it genuinely interesting rather than exotic.",

@@ -16,60 +16,64 @@ export function HeroNeverColonized() {
       id="top"
       className="relative isolate flex min-h-[100svh] flex-col justify-between overflow-hidden text-ink-950"
     >
-      {/* Warm temple-interior backdrop: saffron + blush washes over warm cream */}
+      {/* Warm sunrise-over-rice-field backdrop: saffron high-right + blush low-left, on warm cream */}
       <div className="absolute inset-0 -z-10">
         <motion.div
-          initial={{ scale: 1.04 }}
-          animate={reduce ? { scale: 1.04 } : { scale: 1.1 }}
-          transition={{ duration: 30, ease: "linear", repeat: Infinity, repeatType: "mirror" }}
+          initial={{ scale: 1.02 }}
+          animate={reduce ? { scale: 1.02 } : { scale: 1.08 }}
+          transition={{ duration: 34, ease: "linear", repeat: Infinity, repeatType: "mirror" }}
           className="absolute inset-0"
           style={{
             background: `
-              radial-gradient(900px 700px at 85% 20%, rgba(245,198,90,0.55), transparent 60%),
-              radial-gradient(700px 500px at 15% 85%, rgba(240,184,165,0.5), transparent 65%),
-              radial-gradient(1100px 600px at 50% 55%, rgba(90,138,111,0.22), transparent 70%),
-              linear-gradient(180deg, #faf3e4 0%, #f2e7ce 55%, #f0b8a5 100%)
+              radial-gradient(1100px 800px at 88% 12%, rgba(245,198,90,0.65), transparent 58%),
+              radial-gradient(800px 600px at 8% 95%, rgba(240,184,165,0.45), transparent 62%),
+              radial-gradient(1000px 700px at 45% 70%, rgba(90,138,111,0.18), transparent 72%),
+              linear-gradient(180deg, #faf3e4 0%, #f6ecd3 50%, #eee0c1 100%)
             `,
           }}
         />
 
-        {/* Decorative temple-interior suggestion: a row of three arched doorways in saffron silhouette */}
+        {/* Single minimalist sun / lotus disc — sits off to the right, out of the text area */}
         <svg
           aria-hidden
-          viewBox="0 0 1600 900"
-          className="absolute bottom-0 left-0 right-0 h-[40%] w-full"
-          preserveAspectRatio="xMidYMax slice"
+          viewBox="0 0 1200 900"
+          className="absolute right-0 top-0 hidden h-full w-[55%] md:block"
+          preserveAspectRatio="xMaxYMid meet"
         >
           <defs>
-            <linearGradient id="arch-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stopColor="#3d6950" stopOpacity="0.9" />
-              <stop offset="100%" stopColor="#2a4e3a" stopOpacity="1" />
-            </linearGradient>
-            <linearGradient id="floor-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stopColor="#2a4e3a" stopOpacity="1" />
-              <stop offset="100%" stopColor="#1c140e" stopOpacity="1" />
-            </linearGradient>
+            <radialGradient id="sun-disc" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stopColor="#f5c65a" stopOpacity="0.55" />
+              <stop offset="60%" stopColor="#e7a82a" stopOpacity="0.2" />
+              <stop offset="100%" stopColor="#e7a82a" stopOpacity="0" />
+            </radialGradient>
           </defs>
-          {/* Floor */}
-          <rect x="0" y="680" width="1600" height="220" fill="url(#floor-gradient)" />
-          {/* Three Thai-style pointed arches */}
-          <g fill="url(#arch-gradient)">
-            <path d="M 80 680 L 80 440 Q 80 320 220 260 Q 360 320 360 440 L 360 680 Z M 130 680 L 130 460 Q 130 370 220 330 Q 310 370 310 460 L 310 680 Z" />
-            <path d="M 620 680 L 620 380 Q 620 240 800 180 Q 980 240 980 380 L 980 680 Z M 680 680 L 680 400 Q 680 290 800 250 Q 920 290 920 400 L 920 680 Z" />
-            <path d="M 1240 680 L 1240 440 Q 1240 320 1380 260 Q 1520 320 1520 440 L 1520 680 Z M 1290 680 L 1290 460 Q 1290 370 1380 330 Q 1470 370 1470 460 L 1470 680 Z" />
-          </g>
-          {/* Candle glows inside the central arch */}
-          <g fill="#f5c65a" opacity="0.85">
-            <circle cx="800" cy="520" r="6" />
-            <ellipse cx="800" cy="518" rx="18" ry="30" fill="#f5c65a" opacity="0.18" />
-          </g>
-          <g fill="#e7a82a" opacity="0.7">
-            <circle cx="220" cy="540" r="4" />
-            <circle cx="1380" cy="540" r="4" />
-          </g>
+          {/* Glowing saffron disc */}
+          <circle cx="830" cy="360" r="260" fill="url(#sun-disc)" />
+          {/* Thin jade ring around it */}
+          <circle
+            cx="830"
+            cy="360"
+            r="185"
+            fill="none"
+            stroke="#3d6950"
+            strokeWidth="1"
+            strokeOpacity="0.35"
+          />
+          {/* Faint horizon line */}
+          <line
+            x1="0"
+            y1="620"
+            x2="1200"
+            y2="620"
+            stroke="#946525"
+            strokeWidth="1"
+            strokeOpacity="0.22"
+            strokeDasharray="2 8"
+          />
         </svg>
 
-        <GrainOverlay opacity={0.08} />
+        {/* Subtle paper grain */}
+        <GrainOverlay opacity={0.05} />
       </div>
 
       {/* Top bar spacer */}
