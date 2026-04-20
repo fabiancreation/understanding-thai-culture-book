@@ -2,6 +2,7 @@ import { Masthead } from "@/components/Masthead";
 import { HeroNeverColonized } from "@/components/HeroNeverColonized";
 import { EditorialIntro } from "@/components/EditorialIntro";
 import { ConceptWeb } from "@/components/ConceptWeb";
+import { Glossary } from "@/components/Glossary";
 import { PassageReel } from "@/components/PassageReel";
 import { ThirteenSmiles } from "@/components/ThirteenSmiles";
 import { StatBand } from "@/components/StatBand";
@@ -21,6 +22,7 @@ export default function Home() {
       <EditorialIntro />
       <StatBand />
       <ConceptWeb />
+      <Glossary />
       <PassageReel />
       <ThirteenSmiles />
       <AuthorNote />

@@ -35,9 +35,12 @@ export function Masthead() {
           <span className="text-paper-300">·</span>
           <span className="truncate text-jade-700">{copy.series.volume}</span>
         </a>
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-7 md:flex">
           <a href="#concepts" className="font-sans text-[13px] tracking-wide text-ink-800 hover:text-jade-700">
             The system
+          </a>
+          <a href="#vocabulary" className="font-sans text-[13px] tracking-wide text-ink-800 hover:text-jade-700">
+            Vocabulary
           </a>
           <a href="#passages" className="font-sans text-[13px] tracking-wide text-ink-800 hover:text-jade-700">
             Passages
